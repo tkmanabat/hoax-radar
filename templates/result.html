@@ -1,0 +1,36 @@
+
+{%extends 'base.html'%}
+{% block contentB %}
+<link href="{{ url_for('static',filename='css/materialize.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+<div class="resized" style="text-align:center;">
+ <div id="hero" class="container" style=" width: 1000px; height:500px; margin-top:4%; display: inline-block;">
+  <h1 class="mb-3" style="text-align:center;"><b> Is the news article<span style="color:  rgb(18, 196, 124)"> fake news?</span></b></h1>
+  <p class="lead mb-5" style="text-align:center;">Disclaimer: The machine learning model does not have 100% accuracy. Please always practice fact checking on your own to verify the integrity of the news article. </p>
+  <div id="container" class="container">
+    <div class="container card" style="padding-top:2%;padding-bottom:2%;padding-left:2%;padding-right:2%;">
+      {% if value == 'INVALID' %}
+        <h6 style="font-size:20px;text-align:center;"><b>Invalid: Please check your URL again</b></h6>
+      {% else %}
+      <img src={{ image }} class="card-img-top" alt="..."  >
+      <br>
+      <p class="lead mb-3" style="text-align:justify;"><b>Article Title: </b>{{ article_title }}</p>
+      <p class="lead mb-0" style="text-align:justify;"><b>Summary: </b>{{text}}</p> 
+      {% endif %}
+      <h4 style="text-align:center;" class="verdict">Machine Learning Model Verdict:</h6>
+      <div style="display:inline;">
+        {% if value == 'FAKE' %}
+          <button style="border-radius:40px;margin-bottom:15px;margin-top:1%;pointer-events:none;cursor:default;" type="button" class="btn btn-danger"><b>{{value}}</b></button>
+        {% elif value == 'REAL' %}
+          <button style="border-radius:40px;margin-bottom:15px;margin-top:1%;pointer-events:none;cursor:default;" type="button" class="btn btn-success"><b>{{value}}</b></button>
+        {% else %}
+          <button style="border-radius:40px;margin-bottom:25px;margin-top:1%;pointer-events:none;cursor:default;" type="button" class="btn btn-warning"><b>{{value}}</b></button>
+        {% endif %}
+      </div>
+    </div>
+    <div style="text-align:left; padding: 1rem;">
+      <a class="btn btn-outline-success" href="/" role="button">Go Back</a>
+    </div>
+  </div>
+</div>
+{% endblock contentB %}
+

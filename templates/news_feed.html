@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+{%block contentC%}
+<div id="container" class="container" style="padding-top:2%;">
+  <h1 class="mb-1" style="text-align:center;"><b> News Feed</b></h1>
+  <p class="lead mb-5" style="text-align:center;">See how our machine learning model fares against the latest headlines provided by<span style="color:  rgb(18, 196, 124)"> NewsAPI </span> </p>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for title in headlines %}
+    {% if title[6] == 'INVALID' or title[5] == 'INVALID' %}
+    {% else %}
+        <div class="col">
+        <div class="card h-100" style="width:25rem;"> 
+          <img src={{ title[4] }} class="card-img-top" alt="..."  >
+          <div class="card-body">
+            <h5 class="card-title">{{ title[1] }}</h5>
+            <p class="card-text"><a href="{{ title[0] }}" style="color:black;  background-color: transparent; text-decoration: none;" target="_blank">{{ title[0] }}</a></p>
+            {% if (title[5]) == 'REAL' %}
+                <button style="border-radius:40px;pointer-events:none;cursor:default;" type="button" class="btn btn-success"><b>{{title[5]}}</b></button>
+              {% elif (title[5]) == 'FAKE' %}
+                <button style="border-radius:40px;pointer-events:none;cursor:default;" type="button" class="btn btn-danger"><b>{{title[5]}}</b></button>
+              {% endif %}
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Date Published: {{title[6]}}</small>
+            </div>
+        </div>
+        </div>
+    
+{% endif %}
+{% endfor %}
+</div>
+</div>
+<script src="{{url_for('static',filename='main.js')}}"
+{%endblock contentC%}

@@ -1,0 +1,87 @@
+{%extends 'base.html'%}
+
+{%block contentD%}
+<section class="showcase">
+
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/static/assets/fakenews.jpg');" > </div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>What is Fake News</h2>
+        <p class="lead mb-0">At its core, we are defining “fake news” as those news stories that are false: the story itself is fabricated, with no verifiable facts, sources or quotes. Sometimes these stories may be propaganda that is intentionally designed to mislead the reader.</p>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('/static/assets/socialdilemma.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Where does it come from?</h2>
+        <p class="lead mb-0">Who are the authors?  They may be:</p>
+        <br>
+        <ul>
+          <li><p class="lead mb-0">Someone wanting to make money, regardless of the content of the article </p></li>
+          <li><p class="lead mb-0">Satirists who want to either make a point or entertain you, or both</p></li>
+          <li><p class="lead mb-0">Poor or untrained journalists - the pressure of the 24 hour news cycle as well as the explosion of news sites may contribute to shoddy writing that doesn't follow professional journalistic standards or ethics</p></li>
+          <li><p class="lead mb-0">Partisans who want to influence political beliefs and policy maker</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/static/assets/clean.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>What can I do about "fake news"?</h2>
+        <p class="lead mb-0">Think critically. Use the strategies on these pages to evaluate the likely accuracy of information. Think twice. If you have any doubt, do NOT share the information.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="testimonials text-center bg-light">
+  <div class="container">
+    <h2 class="mb-1">The Team behind Hoax Radar</h2>
+    <p class="lead mb-5">This Initiative was created in partial fullfilment for Software Engineering Class and Algorithms and Complexity Class</p>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="/static/assets/tim.jpg" alt="">
+          <h5>Timothy Kyle Manabat</h5>
+          <p class="font-weight-light mb-5">Project Lead</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="/static/assets/jo.jpg" alt="">
+          <h5>Joseph Angelo Perez</h5>
+          <p class="font-weight-light mb-1">Front End Developer</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="/static/assets/marl.png" alt="">
+          <h5>John Marlou Pagarao</h5>
+          <p class="font-weight-light mb-1">Back End Developer</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="/static/assets/jom.jpg" alt="">
+          <h5>Jerome Montoya</h5>
+          <p class="font-weight-light mb-1">Front End Developer</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="/static/assets/mark.jpg" alt="">
+          <h5>Mark Fernandez</h5>
+          <p class="font-weight-light mb-1">ML Researcher</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{{url_for('static',filename='main.js')}}"
+{%endblock contentD%}

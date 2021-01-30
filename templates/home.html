@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+
+{% block contentA %}
+
+<header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-2" style="color:black;">Identify Fake News using our Machine Learning Model</h1>
+          <p class="lead mb-30" style="color:black;"><b>Powered by Passive Aggressive Classifier and NLP Techniques</b></p>
+        </div>
+        <br><br><br><br><br>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <div class="d-flex justify-content-center">
+            <form id="form" method='POST' action='/' >
+                <div class="input-group input-group-lg mb-3 rounded-circle">
+                    <input type="text" style="height:3rem; width:40rem; border-radius:15px; border:none;" class="form-control" placeholder="Input the URL" type="text" name="url" value="{{request.form.url}}"></input>
+                    <div class="input-group-append">
+                    <input class="btn btn-primary btn-block btn-large predict-btn" style="height:3rem; border-radius:15px; margin-left: -30px; border:none; z-index:10;" type="submit" id="button-addon2" value="Submit"></input>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<script src="{{url_for('static',filename='main.js')}}"
+{% endblock contentA %}
