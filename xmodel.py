@@ -1,4 +1,3 @@
-
 from newspaper import Article
 import pandas as pd
 import pickle
@@ -50,7 +49,7 @@ def get_headlines():
         
     return final
 
-link="https://clickhole.com/body-positivity-win-dove-has-changed-the-name-of-their-company-to-fat-people-soap/"
+#link="https://clickhole.com/body-positivity-win-dove-has-changed-the-name-of-their-company-to-fat-people-soap/"
 
-print(predict(link))
+#print(predict(link))
 
