@@ -59,23 +59,6 @@ html, body {
 }
 
 
-.form-group .url-box {
-	font-size: 20px;
-	height: 20%; 
-	border-radius: 40px; 
-	border: 0;
-	/* border: 1px solid #aaa;  */
-	padding: 1rem; 
-	width: 100%;
-	text-indent: 10px;
-}
-
-.form-group .predict-btn {
-	font-size: 20px;
-	height: 20%; 
-	border-radius: 40px; 
-	width: 100%;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

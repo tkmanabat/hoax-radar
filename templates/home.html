@@ -16,7 +16,7 @@
           <div class="d-flex justify-content-center">
             <form id="form" method='POST' action='/' >
                 <div class="input-group input-group-lg mb-3 rounded-circle">
-                    <input type="text" style="height:3rem; width:40rem; border-radius:15px; border:none;" class="form-control" placeholder="Input the URL" type="text" name="url" value="{{request.form.url}}"></input>
+                    <input type="text" style="height:3rem; width:40rem; border-radius:15px; border:none;" class="form-control" placeholder="Input the News URL" type="text" name="url" value="{{request.form.url}}" required="required" />
                     <div class="input-group-append">
                     <input class="btn btn-primary btn-block btn-large predict-btn" style="height:3rem; border-radius:15px; margin-left: -30px; border:none; z-index:10;" type="submit" id="button-addon2" value="Submit"></input>
                     </div>
@@ -28,6 +28,4 @@
     </div>
   </header>
 
-
-<script src="{{url_for('static',filename='main.js')}}"
 {% endblock contentA %}
