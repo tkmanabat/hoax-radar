@@ -1,5 +1,7 @@
 
+<p align="center"> 
 <img src="/static/assets/logo.png" class="center">
+</p>
 
 # Hoax Radar  :bulb:
 Hoax Radar is an implementation of a Fake News Detection Flask Web Application using Natural Language Processing and Machine Learning with Python
@@ -10,7 +12,6 @@ Fake news has been one of the hardest problems to solve in recent times. It has 
 ## Website Snippets
 ### Home Page 
 ![](/static/assets/page1.PNG)
-
 ### Results Page
 ![](/static/assets/page2.PNG)
 ### News Feed Page
@@ -34,10 +35,12 @@ This web application was built on the Python programming language.
 
 ## Machine Learning and Natural Language Processing Techniques :mage:
 ### The machine learning algorithm used here is the `Passive Aggressive Classifier`. By using our dataset and the `TF-IDF Vectorizer`, it gave these results
-
+<p align="center"> 
 <img src="/static/assets/matrix.png" class="center">
+</p>
 
-Feel free to fork and improve on this end to end ML application!
+Feel free to clone and improve on this end to end ML application!
+Reach me at my email for any further inquiries.
 
 
 
