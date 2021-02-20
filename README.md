@@ -9,8 +9,15 @@ Fake news has been one of the hardest problems to solve in recent times. It has 
 
 ## Website Snippets
 ![](/static/assets/page1.PNG)
-<img src="/static/assets/page2.png">
-<img src="/static/assets/page3.png">
+Home Page 
+![](/static/assets/page2.PNG)
+Results Page
+![](/static/assets/page3.PNG)
+News Feed Page
+- The application gets the latest news with the help of the NewsAPI and tries to prediect the article 
+
+
+
 
 
 
