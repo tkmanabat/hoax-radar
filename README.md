@@ -19,6 +19,13 @@ Fake news has been one of the hardest problems to solve in recent times. It has 
 
 ![](/static/assets/page3.png)
 
+## Dataset used in training the ML Model 
+<ul>
+    <li>The open source dataset that we collected consists of 40,000 news articles consisting of fake as well as real news.</li>
+    <li>The news articles in the dataset were gathered u from various news outlets from March 31, 2015 up to February 13, 2018</li>
+    <li>The dataset was derived from [Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset) which is an open-source data science community</li>
+</ul>
+
 
 ## Technology Stack Used :desktop_computer:
 This web application was built on the Python programming language.
