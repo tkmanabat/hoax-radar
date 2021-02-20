@@ -34,7 +34,7 @@ This web application was built on the Python programming language.
 </ul>
 
 ## Machine Learning and Natural Language Processing Techniques :mage:
-### The machine learning algorithm used here is the `Passive Aggressive Classifier`. By using our dataset and the `TF-IDF Vectorizer`, it gave these results
+ The machine learning algorithm used here is the `Passive Aggressive Classifier`. By using our dataset and the `TF-IDF Vectorizer`, it gave these results
 <p align="center"> 
 <img src="/static/assets/matrix.png" class="center">
 </p>
